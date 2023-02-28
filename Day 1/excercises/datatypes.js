@@ -1,7 +1,8 @@
-typeof String
-typeof Boolean
-typeof Number
-typeof NaN
+console.log(typeof 'hello')
+console.log(typeof true)
+console.log(typeof 5)
+console.log(typeof null)
+
 
 const hairColor = ''
 const clotheColor = ''
