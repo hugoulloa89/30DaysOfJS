@@ -113,20 +113,37 @@ The perimeter of the triangle is 12
 let sideA = prompt('Enter side A lenght')
 let sideB = prompt('Enter side B lenght')
 let sideC = prompt('Enter side C lenght')
+let perimeter = sideA + sideB + sideC
+console.log(`${perimeter} is the perimeter of the triangle`)
 
 
 
 // Get length and width using prompt and calculate an area of rectangle (area = length x width and the perimeter of rectangle (perimeter = 2 x (length + width))
+let lenght = prompt('Enter the lenght of your rectangle')
+let width = prompt('Enter the width of your rectangle')
+let area = lenght * width
+let perimeter = 2 * lenght + width
+console.log(` The area of the rectangle is ${area} and the perimeter is ${perimeter}`)
 
 // Get radius using prompt and calculate the area of a circle (area = pi x r x r) and circumference of a circle(c = 2 x pi x r) where pi = 3.14.
+const pi = 3.14
+let radius = prompt('Enter the radius of the circle')
+let area = pi * radius * radius
+let circumference = 2 * pi * radius
+console.log(`The area of the circle is ${area}`)
+console.log(`The circumference of the circle is ${circumference}`)
+
 
 // Calculate the slope, x-intercept and y-intercept of y = 2x -2
+let y = '2x - 2'
 
 // Slope is m = (y2-y1)/(x2-x1). Find the slope between point (2, 2) and point(6,10)
+console.log(`Slope of a line through (2,2) and (6,10) is ${(10 - 2) / (6 - 2)}`)
 
 // Compare the slope of above two questions.
 
 // Calculate the value of y (y = x2 + 6x + 9). Try to use different x values and figure out at what x value y is 0.
+
 
 // Writ a script that prompt a user to enter hours and rate per hour. Calculate pay of the person?
 
@@ -135,17 +152,35 @@ Enter hours: 40
 Enter rate per hour: 28
 Your weekly earning is 1120
 */
+let hours = prompt('Enter your work hours weekly')
+const rate = 28
+const earning = hours * rate
+
+console.log(`Your weekly earning is ${earning}`)
 
 // If the length of your name is greater than 7 say, your name is long else say your name is short.
+firstName.length > 7
+    ? console.log('Your name is long')
+    : console.log('Your name is short')
+
 
 // Compare your first name length and your family name length and you should get this output.
+firstName.length == lastName.length
+    ? console.log(`Your first name ${firstName} is equal length as your family name, ${lastName}`)
+    : firstName.length > lastName.length
+        ? console.log(`Your first name ${firstName} is longer than your family name, ${lastName}`)
+        : console.log(`Your family name ${lastName} is longer than your first name, ${firstName}`)
 
 // let firstName = 'Asabeneh'
 // let lastName = 'Yetayeh'
 // Your first name, Asabeneh is longer than your family name, Yetayeh
 
 // Using prompt get the year the user was born and if the user is 18 or above allow the user to drive if not tell the user to wait a certain amount of years.
-
+let bornYear = prompt('Enter the year you born')
+let userAge = year - bornYear
+userAge >= 18 
+    ? console.log('You are allowed to drive')
+    : console.log(`You have to wait ${18 - userAge} to drive`)
 
 // Enter birth year: 1995
 // You are 25. You are old enough to drive
@@ -154,7 +189,8 @@ Your weekly earning is 1120
 // You are 15. You will be allowed to drive after 3 years.
 
 // Write a script that prompt the user to enter number of years. Calculate the number of seconds a person can live. Assume some one lives just hundred years
-
+let secondsLived = prompt('Enter the year your where born')
+console.log(`You have lived ${getTime()* secondsLived}`)
 // Enter number of years you live: 100
 // You lived 3153600000 seconds.
 
@@ -163,8 +199,16 @@ Your weekly earning is 1120
 // YYYY-MM-DD HH:mm
 // DD-MM-YYYY HH:mm
 // DD/MM/YYYY HH:mm
-
+console.log(`${year}-${month+1}-${date} ${hours}:${minutes}`)
+console.log(`${date}-${month+1}-${year} ${hours}:${minutes}`)
+console.log(`${date}/${month+1}/${year} ${hours}:${minutes}`)
 
 // Level 3
 // Create a human readable time format using the Date time object. The hour and the minute should be all the time two digits(7 hours should be 07 and 5 minutes should be 05 )
 // YYY-MM-DD HH:mm eg. 20120-01-02 07:05
+
+let readableHours = now.getHours()
+readableHours = ("0" + readableHours).slice(-2)
+let readableMinutes = now.getMinutes()
+readableMinutes = ('0'+ readableMinutes).slice(-2)
+console.log(`${year}-${month+1}-${date} ${readableHours}:${readableMinutes}`)
