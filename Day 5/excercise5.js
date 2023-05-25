@@ -25,16 +25,46 @@ let countries = [
   ]
 
 // Declare an empty array;
+const arr = []
+
 // Declare an array with more than 5 number of elements
+const fruits = ["apple", "melon", "pear", "pineaple", "strawberry", "grapes"]
+
 // Find the length of your array
+console.log(fruits.length)
+
 // Get the first item, the middle item and the last item of the array
+fruits[0]
+fruits[2]
+fruits[5]
+
 // Declare an array called mixedDataTypes, put different data types in the array and find the length of the array. The array size should be greater than 5
+const mixedDataTypes = [200, "name", true, NaN, "size"]
+
 // Declare an array variable name itCompanies and assign initial values Facebook, Google, Microsoft, Apple, IBM, Oracle and Amazon
+var itCompanies = ["Facebook", "Google", "Microsoft", "Apple", "IBM", "Oracle", "Amazon"]
+
 // Print the array using console.log()
+console.log(itCompanies)
+
 // Print the number of companies in the array
+console.log('Number of companies:', itCompanies.length)
+
 // Print the first company, middle and last company
+let firstCompany = itCompanies[0]
+let middleCompany = itCompanies[2]
+let lastCompany = itComanies[5]
+
+console.log(firstCompany)
+console.log(middleCompany)
+console.log(lastCompany)
+
 // Print out each company
+console.log(itCompanies)
+
 // Change each company name to uppercase one by one and print them out
+
+
 // Print the array like as a sentence: Facebook, Google, Microsoft, Apple, IBM,Oracle and Amazon are big IT companies.
 // Check if a certain company exists in the itCompanies array. If it exist return the company else return a company is not found
 // Filter out companies which have more than one 'o' without the filter method
